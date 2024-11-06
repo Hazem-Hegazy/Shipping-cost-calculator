@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #6a82fb, #fc5c7d, #00c6ff); /* تدرج لوني بين الأزرق والبنفسجي واللبني */
+    background: url('background.jpeg') center center / cover no-repeat; /* استخدام الصورة كخلفية وتغطية كاملة */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.3); /* اللون أبيض مع شفافية بنسبة 30% */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
