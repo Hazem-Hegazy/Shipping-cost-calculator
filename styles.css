@@ -63,4 +63,6 @@ button:hover {
     padding: 10px;
     border-radius: 8px;
     border: 2px solid #007bff;
+    transition: opacity 0.5s ease;
+    opacity: 0;
 }
