@@ -1,4 +1,4 @@
-const costPerKilometer = 10; // Cost per kilometer
+const costPerKilometer = 5; // Cost per kilometer
 const defaultWeight = 5; // Default weight in kg
 const defaultWeightCost = 15; // Cost for 5 kg
 
