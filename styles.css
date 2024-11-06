@@ -1,62 +1,30 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background: url('background.jpeg') center center / cover no-repeat; /* استخدام الصورة كخلفية وتغطية كاملة */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Cost Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome</h1>
+        <label for="distance">Distance (k/m):</label>
+        <input type="number" id="distance" placeholder="Enter distance" required>
+        
+        <label for="weight">Weight (k/g):</label>
+        <input type="number" id="weight" placeholder="Enter weight (optional)">
 
-.container {
-    background-color: rgba(255, 255, 255, 0.0); /* اللون أبيض مع شفافية بنسبة 30% */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    width: 350px;
-    text-align: center;
-}
+        <label for="productType">Classification:</label>
+<select id="productType">
+    <option value="normal">normal</option>
+    <option value="fragile">food</option>
+    <option value="perishable">perishable</option>
+</select>
 
-h1 {
-    color: #333;
-    margin-bottom: 20px;
-    font-size: 24px;
-}
-
-label {
-    display: block;
-    margin: 15px 0 5px;
-    font-size: 16px;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-button {
-    width: 100%;
-    padding: 12px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-#result {
-    margin-top: 15px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-}
+        <button onclick="calculateCost()">Start</button>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
