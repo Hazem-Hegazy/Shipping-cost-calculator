@@ -8,29 +8,31 @@
 </head>
 <body>
     <div class="container">
-        <h1>Shipping Cost calcukator</h1>
+        <h1>Shipping Cost Calculator</h1>
 
         <!-- Input fields -->
-        <label for="distance">Distance (k/m):</label>
-        <input type="number" id="distance" placeholder="enter distance in km">
+        <label for="distance">Distance (km):</label>
+        <input type="number" id="distance" placeholder="Enter distance in km">
         
-        <label for="weight">Weight (k/g):</label>
+        <label for="weight">Weight (kg):</label>
         <input type="number" id="weight" placeholder="Enter weight in kg">
 
         <label for="productType">Product Type:</label>
 <select id="productType">
-    <option value="normal">Regular</option>
-    <option value="fragile">food</option>
-    <option value="perishable">perishable</option>
+    <option value="regular">Regular</option>
+    <option value="food">Food</option>
+    <option value="perishable_or_fragile">Perishable or Fragile</option>
 </select>
 
-<!-- Error message area -->
- <div id="error-message" style="color: red; display: none; margin-top: 10px;"></div>
 
- 
-        <button onclick="calculateCost()">Start</button>
-        <div  id="result"></div>
+        <!-- Error message area -->
+        <div id="error-message" style="color: red; display: none; margin-top: 10px;"></div>
+
+        <!-- Calculate Button -->
+        <button onclick="calculateCost()">Calculate Cost</button>
+        <div id="result"></div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
