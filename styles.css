@@ -1,68 +1,125 @@
+/* تحديث نمط الخلفية */
 body {
     font-family: 'Arial', sans-serif;
-    background: url('background.jpeg') center center / cover no-repeat; /* استخدام الصورة كخلفية وتغطية كاملة */
+    background: linear-gradient(to bottom right, rgba(34, 193, 195, 0.7), rgba(253, 187, 45, 0.7)), url('background.jpeg') center center / cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    color: #fff;
 }
 
+/* تحسين شفافية واجهة الحاوية */
 .container {
-    background-color: rgba(255, 255, 255, 0.0); /* اللون أبيض مع شفافية بنسبة 30% */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    width: 350px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    width: 400px;
     text-align: center;
 }
 
+/* العنوان الرئيسي */
 h1 {
-    color: #333;
-    margin-bottom: 20px;
-    font-size: 24px;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
 }
 
+/* تنسيق النصوص */
 label {
     display: block;
     margin: 15px 0 5px;
     font-size: 16px;
+    color: #ddd;
 }
 
+/* الحقول */
 input {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* الأزرار مع تأثير متحرك */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #1769aa;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* نتيجة مخصصة */
+#result {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #28a745;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #007bff;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+
+/* حاوية تسجيل الدخول */
+.login-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
 }
 
-button {
+.login-container button {
     width: 100%;
     padding: 12px;
-    background-color: #007bff;
+    background-color: #2196f3;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
 }
 
-button:hover {
-    background-color: #0056b3;
-}
-
-#result {
-    margin-top: 15px;
-    font-size: 33px;
-    font-weight: bold;
-    color: #28a745;
-    background-color: rgba(255, 255, 255, 0.3);
-    padding: 10px;
-    border-radius: 8px;
-    border: 2px solid #007bff;
-    transition: opacity 0.5s ease;
-    opacity: 0;
+.login-container button:hover {
+    background-color: #1769aa;
+    transform: scale(1.05);
 }
